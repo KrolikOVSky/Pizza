@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="thisWindow" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pizza.mainWindow.MainWindow">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem fx:id="closeAction" mnemonicParsing="false" onAction="#closeAction" text="Закрыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Редактировать">
+            <items>
+              <MenuItem fx:id="openSettings" mnemonicParsing="false" onAction="#openSettings" text="Настройки" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem fx:id="openAbout" mnemonicParsing="false" onAction="#openAbout" text="О приложении" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane fx:id="groups" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <buttons>
+             <Button mnemonicParsing="false" onAction="#addCat" text="Button" ButtonBar.buttonData="LEFT" />
+         </buttons>
+      </ButtonBar>
+   </bottom>
+
+</BorderPane>

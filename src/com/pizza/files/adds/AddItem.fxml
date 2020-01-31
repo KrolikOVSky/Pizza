@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--fx:controller="com.pizza.files.adds.AddGroupp"-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pizza.files.adds.test">
+   <children>
+      <Button fx:id="btn" layoutX="8.0" layoutY="152.0" mnemonicParsing="false" onAction="#create" prefHeight="138.0" prefWidth="383.0" text="Создать">
+
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <TextField fx:id="input" layoutX="8.0" layoutY="61.0" onAction="#create" prefHeight="90.0" prefWidth="383.0" promptText="Введите название группы" style="-fx-alignment: center;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="8.0" layoutY="6.0" prefHeight="54.0" prefWidth="383.0" style="-fx-alignment: center; -fx-font-size: 20;" text="Создание новой группы товаров" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FlowPane layoutY="290.0" prefHeight="235.0" prefWidth="400.0">
+         <children>
+            <BorderPane prefHeight="150.0" prefWidth="150.0">
+               <top>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+               </top>
+               <bottom>
+                  <Label text="Маргаритта" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <Button alignment="CENTER" mnemonicParsing="false" text="Добавить в корзину" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </FlowPane>
+
+   </children>
+</AnchorPane>
